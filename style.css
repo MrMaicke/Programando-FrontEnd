@@ -1,0 +1,50 @@
+h1{
+    color: green;
+}
+
+.title{
+    color: #722F37;
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    /*mudar cor*/
+    color: #ff0000;
+
+    /*alterar tamanho da fonte*/
+    font-size: 20px;
+
+    /*alinhar o texto*/
+    text-align: center;
+
+    /*mudar a fonte do texto*/
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*deixar em negrito*/
+    font-weight: bold;
+    
+    /*deixar sublinhado*/
+    text-decoration: underline;
+
+    /*deixa italico*/
+    font-style: italic;
+}
+
+#meuTitulo{
+    color: violet;
+}
+
+img{
+    width: 300px;
+    height: 330px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.caixinha{
+    padding: 20px;
+    color: white;
+    background-color: black;
+}

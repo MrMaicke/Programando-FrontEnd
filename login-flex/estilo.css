@@ -1,0 +1,74 @@
+/*Resetando valores do navegador*/
+*{/*(*) - reconhecer qualquer elemento do html*/
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(15, 21, 41);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    margin: 300px ;
+    padding: 20px 15px;
+    width: 900px;
+    border-radius: 10px;
+    background-color: rgb(212, 202, 184);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+div{
+    padding: 10px;
+}
+
+label{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+input{
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+
+button{
+    width: 120px;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: cornflowerblue;
+    
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+
+input{
+    text-align: center;
+}
+
+.title{
+    color: #722F37;
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
