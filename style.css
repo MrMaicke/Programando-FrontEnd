@@ -1,413 +1,51 @@
-/* Importando a Referencia da font INTER no site do GOOGLE FONTS (precisa de internet) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
+h1{
+    color: green;
 }
 
-/* Estilização Global */
-.container{
-    width: 90%;
-    margin: 0 auto;
-}
-
-a{
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-button{
-    cursor: pointer; /* Mudar o icone de ação do mouse */
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px 30px;
-
-    border: none;
-    color: white;
-    border-radius: 3px;
-    background-color: #1f1f1f;
+.title{
+    color: #722F37;
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .titulo{
-    color: #1f1f1f;
-    font-size: 150px;
-    font-weight: 500;
-}
+    /*mudar cor*/
+    color: #ff0000;
 
-.titulo-secundario{
-    color: #1f1f1f;
-    font-size: 50px;
-    font-weight: 500;
-}
-
-.titulo-servicos{
-    color: #1f1f1f;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.paragrafo{
+    /*alterar tamanho da fonte*/
     font-size: 20px;
-    color: #4e4b59;
-    font-weight: 400;
-    line-height: 150%;
-}
 
-/* Estilizando o vosso cabeçalho */
-.cabecalho{
-    height: 100px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.links-navegacao{
-    font-weight: 600;
-    list-style-type:none;
-
-    gap: 50px; /* Colocar um intervalo (espaço) entre os itens do diplay flex */
-    display: flex;
-}
-
-/* Estilizando o conteudo principal - main */
-main{
-    padding: 40px 0px;
-}
-
-/* Estilizando a seção de apresentação */
-.descricao-servico{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.descricao-servico-texto{
-    width: 65%;
-}
-
-.descricao-servico-texto p{
-    width: 60%;
-    margin-top: 25px;
-}
-
-.numeros-projetos{
-    display: flex;
-    gap: 20px;
-}
-
-.efeito-numero{
-    font-size: 52px;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.button-principal{
-    font-size: 22px;
-    padding: 25px 70px;
-}
-
-.apresentacao-numeros-marca{
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.quantidade-projetos{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-/* Estilizando a seção de serviços */
-.titulo-tracejado{
-    display: flex;
-    align-items: center;
-}
-
-.titulo-tracejado hr{
-    width: 90px;
-    border: none;
-    background-color: #1f1f1f;
-}
-
-.tipos-servicos{
-    margin-top: 50px;
-    gap: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.servico{
-    width: 30%;
-    gap: 30px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.servico-texto{
-    margin-top: 15px;
-}
-
-.servicos-principais{
-    margin: 120px 0px;
-}
-
-/* Estilizando a seção de projeções de serviços */
-.projecao{
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-}
-
-/* (>) seleciona as imagens, somente dentro da div.projeção */
-.projecao > img{
-    width: 800px;
-    height: 700px;
-    border-radius: 15px;
-
-    object-fit: cover;
-    object-position: left;
-    transition: 5s;
-}
-
-.projecao > img:hover{
-    object-position: right;
-}
-
-.projecao-textos{
-    width: 50%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-.dropdown{
-    width: 100%;
-    padding: 30px 0px;
-    border-bottom: 1px solid #ddd;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Estilizando a seção de passos */
- 
-.passo-simples{
-    display: flex;
-    gap: 30px;
-}
- 
-.passo-icone{
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
- 
-.passo-icone hr{
-    height: 95px;
-    background-color: #ddd;
-    width: 2px;
-    border: none;
-}
- 
-.balao{
-    background-color: #1F1F1F;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-}
- 
-.projecao-passos{
-    gap: 20px;
-}
- 
-.passo-texto{
-    margin-top: 15px;
-}
- 
-.projecao-em-etapas{
-    margin: 150px 0px;
-}
-
-/* Estilizando a seção de depoimentros */
-.card{
-    width: 500px;
-    height: 450px;
-    color: white;
-    padding: 30px 50px;
-    border-radius: 8px;
-    background-color: #1F1F1F;
-}
-
-/* Estilizar mais de uma classe ao mesmo tempo */
-.texto-branco, .nome-cliente{
-    color: white;
-    display: block;
-    font-size: 24px;
-}
-
-.texto-cinza{
-    color: #8c8a97;
-}
-
-.cliente img{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.cliente{
-    gap: 15px;
-    display: flex;
-    margin-top: 20px;
-}
-
-.aspas{
-    font-size: 120px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.depoimentos-clientes{
-    gap: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.conteudo-secao-clientes{
-    width: 100%;
-    gap: 30px;
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.slide{
-    padding: 15px;
-    margin-right: 20px;
-    background-color: #f1f0f5;
-}
-
-.slide:last-child{
-    transform: rotate(180deg);
-}
-
-.nossos-clientes{
-    gap: 50px;
-    display: flex;
-
-    align-items: flex-end;
-    flex-direction: column;
-}
-
-.nome-cliente h2{
-    width: 30;
-}
-
-/* Estilizando a seção de contatos */
-.contato{
-    margin-top: 120px;
-    gap: 30px;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Pagar todos itens dentro da classe .contato apenas filhos */
-.contato > *{
-    width: 40%;
+    /*alinhar o texto*/
     text-align: center;
+
+    /*mudar a fonte do texto*/
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*deixar em negrito*/
+    font-weight: bold;
+    
+    /*deixar sublinhado*/
+    text-decoration: underline;
+
+    /*deixa italico*/
+    font-style: italic;
 }
 
-form{
-    width: 50% !important;/* Forçar o valor acima de qualquer outro */
-    padding: 10px;
-
-    display: flex;
-    justify-content: space-between;
-
-    box-shadow: 0px 2px 20px 5px #ddd;
-    background-color: white;
-
-    position: relative;
-    top: 70px;
+#meuTitulo{
+    color: violet;
 }
 
-form input{
-    width: 60%;
-    border: none;
-    font-size: 20px;
+img{
+    width: 300px;
+    height: 330px;
+    margin: 30px;
+    border-radius: 20px;
 }
 
-/* Remove a borda quando o campo está inspecionado */
-input:focus{
-    outline: none;
+.caixinha{
+    padding: 20px;
+    color: white;
+    background-color: black;
 }
 
-/* Estilizando o rodape */
-footer{
-    padding: 60px 0px;
-    background-color: #1F1F1F;
-}
-
-footer .container{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.redes-sociais{
-    display: flex;
-}
-
-.rede-social-icon{
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 4px;
-    background-color: #343238;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.vivadecor{
-    width: 400px;
-
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.vivadecor > img {
-    width: 200px;
-    filter: invert(100%);
-  }
-
-  .links-rodape{
-    list-style-type: none;
-  }
-
-  .rodape-coluna, .rodape-coluna ul{
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
